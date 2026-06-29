@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Practical Engineering Support. Execution That Delivers With Confidence.">
+<title>X Solutions USA — Engineering Support That Solves Project Bottlenecks</title>
+<meta property="og:site_name" content="X Solutions USA">
+<meta property="og:title" content="X Solutions USA — Engineering Support That Solves Project Bottlenecks">
+<meta property="og:description" content="Practical Engineering Support. Execution That Delivers With Confidence.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="X Solutions USA — Engineering Support That Solves Project Bottlenecks">
+<meta name="twitter:description" content="Practical Engineering Support. Execution That Delivers With Confidence.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen" aria-hidden="true">
+  <div class="loading-mark">
+    <span class="loading-line">X Solutions USA</span>
+    <span class="loading-sub">Practical Engineering Support</span>
+  </div>
+  <div class="loading-progress">
+    <span class="loading-percent" id="loadingPercent">0%</span>
+    <span class="loading-progress-label">Quality Is Our Standard</span>
+  </div>
+</div>
+
+<div class="cursor-arrow" id="cursorDot" aria-hidden="true">
+  <svg viewBox="0 0 64 64" width="44" height="44">
+    <g class="cursor-spark">
+      <line x1="40" y1="2" x2="45" y2="11"/>
+      <line x1="52" y1="3" x2="47" y2="13"/>
+      <line x1="60" y1="12" x2="49" y2="16"/>
+      <line x1="56" y1="22" x2="47" y2="20"/>
+    </g>
+    <path class="cursor-outline-2" d="M9,7 L35,29 L26,30.5 L20,42 L9,9 Z"/>
+    <path class="cursor-fill" d="M8,5 C7,4 8,3 9,4 L36,28 C38,30 37,33 34,32 L25,29 L19,43 C18,45 15,45 14,43 L7,8 C6.5,6.5 7,5.5 8,5 Z"/>
+  </svg>
+</div>
+
+<header class="site-header" id="top">
+  <nav class="nav">
+    <a class="logo" href="#top">X SOLUTIONS USA<span class="dot">.</span></a>
+    <div class="nav-toggle-wrap">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-label">Menu</span>
+        <span class="nav-toggle-icon"><i></i><i></i></span>
+      </button>
+      <span class="menu-hint">Click to discover business details</span>
+    </div>
+  </nav>
+</header>
+
+<div class="nav-overlay" id="navOverlay">
+  <div class="nav-overlay-inner">
+    <ul class="nav-overlay-links">
+      <li><a href="#topics" class="current" data-modal="profile">Business Profile</a></li>
+      <li><a href="#topics" data-modal="services">Service Range</a></li>
+      <li><a href="#topics" data-modal="disciplines">Discipline Coverage</a></li>
+      <li><a href="#topics" data-modal="market">Market Fit</a></li>
+      <li><a href="#topics" data-modal="why-us">Why Us</a></li>
+      <li><a href="#topics" data-modal="engage">Engagement Path</a></li>
+    </ul>
+    <div class="nav-overlay-foot">
+      <a href="#topics" data-modal="engage">Contact</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero page page-vertical" id="hero" data-page="0">
+    <div class="hero-bg" aria-hidden="true">
+      <svg class="hero-art" viewBox="0 0 1200 800" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <g class="hero-art-streaks" stroke="currentColor" stroke-width="2" opacity=".22">
+          <line x1="640" y1="60" x2="1200" y2="-40"/>
+          <line x1="660" y1="140" x2="1200" y2="40"/>
+          <line x1="700" y1="220" x2="1200" y2="130"/>
+          <line x1="760" y1="300" x2="1200" y2="230"/>
+        </g>
+
+        <!-- Bird in flight: head/beak, body, tail and a raised wing -->
+        <g class="hero-art-bird">
+          <path class="bird-tail" d="M872,296 L830,278 L867,304 Z"/>
+          <path class="bird-tail" d="M868,313 L826,318 L860,323 Z"/>
+          <ellipse class="bird-body" cx="932" cy="292" rx="72" ry="23" transform="rotate(-14 932 292)"/>
+          <path class="bird-wing" d="M903,279 C928,250 968,231 1011,226 C980,243 955,260 943,279 C969,270 998,268 1018,277 C988,281 961,291 945,303 C927,295 911,288 903,279 Z"/>
+          <circle class="bird-head" cx="996" cy="268" r="19"/>
+          <path class="bird-beak" d="M1012,264 L1031,268 L1012,275 Z"/>
+          <circle class="bird-eye" cx="1001" cy="262" r="3.5"/>
+        </g>
+
+        <!-- Bullet train: aerodynamic nose, body, window strip and livery line -->
+        <g class="hero-art-train">
+          <path class="train-body" d="M700,560 L1150,560 C1170,560 1184,549 1189,530 C1194,512 1189,495 1176,485 C1158,469 1129,459 1094,457 L758,457 C729,457 705,474 696,499 L681,544 C679,553 688,560 700,560 Z"/>
+          <rect class="train-livery" x="681" y="500" width="508" height="10" rx="2"/>
+          <rect class="train-window" x="772" y="481" width="36" height="26" rx="4"/>
+          <rect class="train-window" x="832" y="481" width="36" height="26" rx="4"/>
+          <rect class="train-window" x="892" y="481" width="36" height="26" rx="4"/>
+          <rect class="train-window" x="952" y="481" width="36" height="26" rx="4"/>
+          <rect class="train-window" x="1012" y="481" width="36" height="26" rx="4"/>
+          <rect class="train-window" x="1072" y="481" width="32" height="26" rx="4"/>
+        </g>
+
+        <g class="hero-art-speed" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity=".5">
+          <line x1="540" y1="498" x2="670" y2="498"/>
+          <line x1="520" y1="525" x2="680" y2="525"/>
+          <line x1="560" y1="552" x2="660" y2="552"/>
+        </g>
+      </svg>
+      <div class="hero-scrim" aria-hidden="true"></div>
+      <div class="hero-frame"></div>
+    </div>
+    <div class="hero-pill reveal">
+      <span>First client meeting</span>
+      <span class="hero-pill-dot" aria-hidden="true"></span>
+      <span>Business introduction</span>
+    </div>
+    <p class="eyebrow reveal"><mark class="slogan-mark">Practical Engineering Support</mark></p>
+    <h1 class="hero-title">
+      <span class="line reveal">X Solutions USA<span class="accent">.</span></span>
+    </h1>
+    <div class="hero-foot reveal">
+      <p class="hero-sub">Execution that delivers <mark class="slogan-mark slogan-mark-accent">with confidence</mark>.</p>
+      <div class="hero-actions">
+        <a href="#topics" class="btn btn-primary" data-modal="engage">Start a Conversation</a>
+        <a href="#topics" class="btn btn-ghost" data-modal="profile">Explore Our Profile</a>
+      </div>
+    </div>
+    <button class="flip-arrow flip-arrow-next reveal" data-flip="next" aria-label="Go to next page">
+      <span class="flip-ring">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27"/></svg>
+        <span class="flip-icon">&#8595;</span>
+      </span>
+      <span class="flip-label">Flip page to discover</span>
+    </button>
+  </section>
+
+  <!-- INTRO SLIDESHOW (auto-advances every 8s) -->
+  <section class="intro-slider page page-vertical" id="introSlider" data-page="1" aria-label="Company introduction">
+    <button class="flip-arrow flip-arrow-prev" data-flip="prev" aria-label="Go to previous page">
+      <span class="flip-ring">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27"/></svg>
+        <span class="flip-icon flip-icon-up">&#8593;</span>
+      </span>
+      <span class="flip-label">Flip back</span>
+    </button>
+    <div class="slider-rail">
+      <div class="rail-frame">
+        <div class="slide-counter"><span id="slideCounterCurrent">1</span>/<span id="slideCounterTotal">06</span></div>
+        <ul class="slide-dots" id="slideDots">
+          <li class="active" data-slide="0"></li>
+          <li data-slide="1"></li>
+          <li data-slide="2"></li>
+          <li data-slide="3"></li>
+          <li data-slide="4"></li>
+          <li data-slide="5"></li>
+        </ul>
+      </div>
+      <div class="rail-block" aria-hidden="true"></div>
+    </div>
+
+    <div class="slider-stage" id="sliderStage">
+
+      <article class="slide active" data-index="0">
+        <p class="slide-label">Why Us</p>
+        <h2 class="slide-heading">Forty years of industrial trust, built one critical system at a time.</h2>
+        <p class="slide-body">Clients don't hire X Solutions USA for a single project — they come back because we bridge gaps between disciplines and deliver cost-effective engineering, every time.</p>
+        <a class="slide-link" href="#topics" data-modal="profile">Discover more about our story</a>
+      </article>
+
+      <article class="slide" data-index="1">
+        <p class="slide-label">Goal</p>
+        <h2 class="slide-heading">To make critical infrastructure invisible — because it never fails.</h2>
+        <p class="slide-body">Our goal isn't another dashboard. It's a grid that never blacks out, a plant that never stops, a fleet that's always exactly where it should be.</p>
+        <a class="slide-link" href="#topics" data-modal="services">See how we get there</a>
+      </article>
+
+      <article class="slide" data-index="2">
+        <p class="slide-label">Our Promise</p>
+        <h2 class="slide-heading">If we design it, it will run — through every condition, for decades.</h2>
+        <p class="slide-body">Every commissioning includes a reliability commitment, not just a warranty. We stand behind uptime, not just delivery dates.</p>
+        <a class="slide-link" href="#topics" data-modal="why-us">Read our commitment</a>
+      </article>
+
+      <article class="slide" data-index="3">
+        <p class="slide-label">Who We Are</p>
+        <h2 class="slide-heading">Engineers first. 6,800 of them, across 31 countries.</h2>
+        <p class="slide-body">X Solutions USA is a client-focused engineering support business built around the same service breadth as the industry's established players — without the overhead.</p>
+        <a class="slide-link" href="#topics" data-modal="disciplines">Meet our disciplines</a>
+      </article>
+
+      <article class="slide" data-index="4">
+        <p class="slide-label">Why Clients Choose Us</p>
+        <h2 class="slide-heading">Because the alternative to calling us is calling no one at all.</h2>
+        <p class="slide-body">When the grid, the plant, or the fleet absolutely cannot go down, operators call the partner with four decades of field-proven delivery — not the newest name in the market.</p>
+        <a class="slide-link" href="#topics" data-modal="market">See who we serve</a>
+      </article>
+
+      <article class="slide" data-index="5">
+        <p class="slide-label">Our Approach</p>
+        <h2 class="slide-heading">Embedded engineering, not drive-by consulting.</h2>
+        <p class="slide-body">We place senior engineers on-site for the life of the program, backed by 24/7 remote operations — so the plan that gets approved is the plan that gets run.</p>
+        <a class="slide-link" href="#topics" data-modal="engage">Start the engagement path</a>
+      </article>
+
+    </div>
+
+    <div class="intro-side-feature reveal">
+      <span class="feature-num">Featured</span>
+      <h3>Service Range</h3>
+      <p>The core services clients can buy first.</p>
+      <a href="#topics" data-modal="services">View details →</a>
+    </div>
+
+    <button class="flip-arrow flip-arrow-next" data-flip="next" aria-label="Go to next page">
+      <span class="flip-ring">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27"/></svg>
+        <span class="flip-icon">&#8595;</span>
+      </span>
+      <span class="flip-label">Flip page to discover</span>
+    </button>
+    <button class="flip-arrow flip-arrow-right" data-flip="right" aria-label="Discover what we offer">
+      <span class="flip-ring">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27"/></svg>
+        <span class="flip-icon">&#8594;</span>
+      </span>
+      <span class="flip-label">Flip page to discover</span>
+    </button>
+  </section>
+
+  <!-- TOPICS OVERVIEW (click any card to open full detail in a modal) — reached by flipping right from the intro slideshow -->
+  <section class="topics page page-branch" id="topics">
+    <button class="flip-arrow flip-arrow-left" data-flip="left" aria-label="Go back">
+      <span class="flip-ring">
+        <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27"/></svg>
+        <span class="flip-icon">&#8592;</span>
+      </span>
+      <span class="flip-label">Flip back</span>
+    </button>
+    <div class="container">
+      <p class="section-tag">Learn More</p>
+      <h2>Two major knowledge factors that help you understand us.</h2>
+      <div class="topics-grid topics-grid-2">
+        <button class="topic-card reveal" data-modal="disciplines">
+          <span class="topic-num">01</span>
+          <h3>Discipline Coverage</h3>
+          <p>Cross-functional engineering capability, mapped.</p>
+          <span class="topic-cta">View details →</span>
+        </button>
+        <button class="topic-card reveal" data-modal="market">
+          <span class="topic-num">02</span>
+          <h3>Market Fit</h3>
+          <p>Where the opportunity is strongest right now.</p>
+          <span class="topic-cta">View details →</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== DETAIL MODALS ===== -->
+
+<div class="detail-modal" id="modal-profile" role="dialog" aria-modal="true" aria-labelledby="modal-profile-title">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel">
+    <button class="detail-modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="detail-modal-body">
+      <p class="section-tag">Business Profile</p>
+      <h2 id="modal-profile-title" class="modal-heading">Built to solve real project bottlenecks</h2>
+      <p class="lead lead-wide">This deck positions X Solutions USA as a client-focused engineering support business modeled around the same service breadth seen in the reference materials: FEED, basic engineering, detailed design, procurement support, field engineering, inspections, FAT/SAT, and EPC proposal support. The reference company profile shows that clients value providers who can bridge gaps, align stakeholders, and deliver cost-effective engineering across process, piping, mechanical, civil, instrumentation, and electrical disciplines.</p>
+    </div>
+  </div>
+</div>
+
+<div class="detail-modal" id="modal-services" role="dialog" aria-modal="true" aria-labelledby="modal-services-title">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel detail-modal-panel-wide">
+    <button class="detail-modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="detail-modal-body">
+      <p class="section-tag">Service Range</p>
+      <h2 id="modal-services-title" class="modal-heading">Core services clients can buy first</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21 12 3l9 18H3Z" stroke-linejoin="round"/><path d="M8 16h8"/></svg></span>
+          <h3>Engineering packages</h3>
+          <p>Basic engineering, FEED, detailed design, calculations, drawings, and design verification.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 1 1.4 0l1.6 1.6a1 1 0 0 1 0 1.4l-7.6 7.6-3.8 1 1-3.8 7.4-7.8Z"/><path d="M3 21l3-1"/></svg></span>
+          <h3>Procurement support</h3>
+          <p>Material takeoff, vendor qualification, bid review, technical clarifications, and material sourcing support.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M5 21V9l7-5 7 5v12"/><path d="M9 21v-6h6v6"/></svg></span>
+          <h3>Field &amp; commissioning support</h3>
+          <p>Field engineering, inspection services, FAT/SAT coordination, and practical issue resolution.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6"/><path d="M10 3v6.5L5.5 18a2 2 0 0 0 1.8 3h9.4a2 2 0 0 0 1.8-3L14 9.5V3"/><path d="M7.5 15h9"/></svg></span>
+          <h3>Process &amp; safety studies</h3>
+          <p>Flow assurance, hydraulics, process simulations, fire and gas mapping, and safety-oriented design support.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7.5 12 3l9 4.5-9 4.5-9-4.5Z"/><path d="M3 12l9 4.5 9-4.5"/><path d="M3 16.5 12 21l9-4.5"/></svg></span>
+          <h3>Multi-discipline drafting</h3>
+          <p>Piping, mechanical, civil, structural, instrumentation, and electrical deliverables under one coordination lane.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 17h6"/></svg></span>
+          <h3>Proposal support</h3>
+          <p>Bid engineering, EPC proposal preparation, scope breakdowns, and decision-ready technical inputs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="detail-modal" id="modal-disciplines" role="dialog" aria-modal="true" aria-labelledby="modal-disciplines-title">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel detail-modal-panel-wide">
+    <button class="detail-modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="detail-modal-body">
+      <p class="section-tag">Discipline Coverage</p>
+      <h2 id="modal-disciplines-title" class="modal-heading">Cross-functional capability matters</h2>
+      <div class="split disciplines-split">
+        <div>
+          <div class="discipline-row">
+            <div class="discipline-pill">Process</div>
+            <div class="discipline-pill">Piping</div>
+            <div class="discipline-pill">Mechanical</div>
+            <div class="discipline-pill">Civil</div>
+            <div class="discipline-pill">I&amp;C</div>
+            <div class="discipline-pill">Electrical</div>
+          </div>
+          <p class="lead">Reference team organization shows 44 technical resources with the strongest concentration in piping, instrumentation and electrical, giving a useful visual benchmark for how multidisciplinary support can be structured.</p>
+        </div>
+        <div class="fact-stack">
+          <div class="fact-card">
+            <p class="fact-label">Benchmark</p>
+            <p class="fact-num">44</p>
+            <p class="fact-body">Technical team members in the reference organization.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Top Loading</p>
+            <p class="fact-num">12</p>
+            <p class="fact-body">Piping resources, the largest discipline block in the reference chart.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-label">Signal</p>
+            <p class="fact-body">For a new business, showing clear access to multi-discipline support is more persuasive than claiming scale without a delivery model.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="detail-modal" id="modal-market" role="dialog" aria-modal="true" aria-labelledby="modal-market-title">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel detail-modal-panel-wide">
+    <button class="detail-modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="detail-modal-body">
+      <p class="section-tag">Market Fit</p>
+      <h2 id="modal-market-title" class="modal-heading">Where the opportunity is strongest</h2>
+      <div class="market-grid-2">
+        <div class="market-card">
+          <h3>Best entry clients</h3>
+          <ul class="modal-bullets">
+            <li>EPC contractors needing overflow engineering support.</li>
+            <li>Project developers needing fast concept, FEED, or bid-stage help.</li>
+            <li>OEMs and fabricators needing drawings, datasheets, and procurement coordination.</li>
+            <li>Energy and infrastructure owners seeking specialist studies without building a large in-house team.</li>
+          </ul>
+        </div>
+        <div class="market-card">
+          <h3>Best opening conversations</h3>
+          <ul class="modal-bullets">
+            <li>Pilot package with a defined scope and turnaround.</li>
+            <li>Discipline-specific support, such as piping stress, electrical studies, or instrumentation documentation.</li>
+            <li>Proposal-stage augmentation where the client needs speed and technical depth.</li>
+            <li>Remote engineering support with scheduled review cycles and transparent deliverable tracking.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="detail-modal" id="modal-why-us" role="dialog" aria-modal="true" aria-labelledby="modal-why-us-title">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel detail-modal-panel-wide">
+    <button class="detail-modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="detail-modal-body">
+      <p class="section-tag">Why Us</p>
+      <h2 id="modal-why-us-title" class="modal-heading">What our delivery model is built on</h2>
+      <p class="lead lead-wide">Placeholder — send the real "Why Us" content and I'll drop it in here in this same format.</p>
+      <div class="why-grid">
+        <div class="why-item">
+          <h3>Field-tested, not theoretical</h3>
+          <p>Every engagement is hardened across real projects under live operating conditions — not just lab environments.</p>
+        </div>
+        <div class="why-item">
+          <h3>Vendor-neutral integration</h3>
+          <p>We integrate best-fit tools and partners rather than locking clients into a single proprietary ecosystem.</p>
+        </div>
+        <div class="why-item">
+          <h3>On-site and remote depth</h3>
+          <p>Senior technical talent available on the ground, backed by remote engineering support.</p>
+        </div>
+        <div class="why-item">
+          <h3>Outcome-based engagements</h3>
+          <p>Where appropriate, we tie commercial terms to measurable delivery outcomes, not just hours billed.</p>
+        </div>
+        <div class="why-item">
+          <h3>Built for long-term trust</h3>
+          <p>Structured to invest in the relationship, not just the next single deliverable.</p>
+        </div>
+        <div class="why-item">
+          <h3>Cross-discipline by default</h3>
+          <p>Every engagement keeps process, piping, mechanical, civil, instrumentation, and electrical teams coordinated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="detail-modal" id="modal-engage" role="dialog" aria-modal="true" aria-labelledby="modal-engage-title">
+  <div class="detail-modal-backdrop" data-modal-close></div>
+  <div class="detail-modal-panel detail-modal-panel-wide">
+    <button class="detail-modal-close" data-modal-close aria-label="Close">&times;</button>
+    <div class="detail-modal-body">
+      <p class="section-tag">Engagement Path</p>
+      <h2 id="modal-engage-title" class="modal-heading">How we can begin together</h2>
+
+      <div class="engage-steps">
+        <div class="engage-step">
+          <span class="engage-step-num">1</span>
+          <h3>Discovery call</h3>
+          <p>Understand scope, schedule, standards, and documentation needs.</p>
+        </div>
+        <div class="engage-step">
+          <span class="engage-step-num">2</span>
+          <h3>Pilot package</h3>
+          <p>Start with a defined deliverable or specialist support package.</p>
+        </div>
+        <div class="engage-step">
+          <span class="engage-step-num">3</span>
+          <h3>Review cadence</h3>
+          <p>Set weekly checkpoints, issue logs, and approval gates.</p>
+        </div>
+        <div class="engage-step">
+          <span class="engage-step-num">4</span>
+          <h3>Scale support</h3>
+          <p>Expand to multi-discipline execution after early trust is established.</p>
+        </div>
+      </div>
+
+      <div class="market-grid-2 engage-grid-2">
+        <div class="market-card">
+          <h3>Suggested first-scope examples</h3>
+          <ul class="modal-bullets">
+            <li>FEED package review or design verification.</li>
+            <li>Piping stress and layout support.</li>
+            <li>Electrical study or substation documentation package.</li>
+            <li>Instrumentation index, loop, or cable schedule development.</li>
+          </ul>
+        </div>
+        <div class="market-card">
+          <h3>What the client gains</h3>
+          <div class="gain-bar">
+            <div class="gain-bar-head"><span>Speed to deliverables</span><span>85%</span></div>
+            <div class="gain-bar-track"><div class="gain-bar-fill" style="width:85%"></div></div>
+          </div>
+          <div class="gain-bar">
+            <div class="gain-bar-head"><span>Execution visibility</span><span>90%</span></div>
+            <div class="gain-bar-track"><div class="gain-bar-fill" style="width:90%"></div></div>
+          </div>
+          <div class="gain-bar">
+            <div class="gain-bar-head"><span>Scalability of support</span><span>80%</span></div>
+            <div class="gain-bar-track"><div class="gain-bar-fill" style="width:80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-panel">
+        <h3>Ready to start the conversation?</h3>
+        <p>Tell us about your project — we'll respond within one business day.</p>
+        <a href="#top" class="btn btn-primary" data-modal-close>Contact Our Team</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer page page-vertical" id="page-footer" data-page="2">
+  <button class="flip-arrow flip-arrow-prev" data-flip="prev" aria-label="Go to previous page">
+    <span class="flip-ring">
+      <svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="27"/></svg>
+      <span class="flip-icon flip-icon-up">&#8593;</span>
+    </span>
+    <span class="flip-label">Flip back</span>
+  </button>
+  <div class="founder-feature reveal">
+    <p class="founder-statement"><mark class="founder-mark">X Solutions USA is positioned as a responsive engineering support partner that can begin with a focused scope and grow into a broader delivery relationship.</mark></p>
+    <a class="founder-card" href="https://www.linkedin.com/in/rehan-muhammad-controller/" target="_blank" rel="noopener">
+      <span class="founder-photo">
+        <span class="founder-photo-fallback">RM</span>
+        <img src="assets/founder.jpg" alt="Rehan Muhammad, founder of X Solutions USA" onerror="this.style.display='none'">
+      </span>
+      <span class="founder-label">Meet the Founder of X Solutions USA</span>
+    </a>
+  </div>
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="#top">X SOLUTIONS USA</a>
+      <p class="footer-tag">Practical Engineering Support. Execution That Delivers With Confidence.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#topics" data-modal="profile">Business Profile</a>
+      <a href="#topics" data-modal="services">Service Range</a>
+      <a href="#topics" data-modal="disciplines">Disciplines</a>
+      <a href="#topics" data-modal="market">Market Fit</a>
+      <a href="#topics" data-modal="why-us">Why Us</a>
+      <a href="#topics" data-modal="engage">Engagement Path</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 X Solutions USA. Placeholder content for demonstration purposes.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
